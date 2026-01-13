@@ -138,14 +138,20 @@
             color: var(--text-primary);
         }
 
-        .demo-placeholder {
-            background: var(--bg-light);
-            border: 2px dashed var(--border);
+        .demo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             border-radius: 1rem;
-            padding: 4rem 2rem;
-            text-align: center;
-            color: var(--text-secondary);
-            font-size: 1.125rem;
+            overflow: hidden;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+        }
+
+        .demo-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            max-width: 100%;
         }
 
         /* Features Section */
@@ -317,9 +323,8 @@
     <section class="product-demo" id="demo">
         <div class="container">
             <h2>See It In Action</h2>
-            <div class="demo-placeholder">
-                <p>📸 Product Screenshot Placeholder</p>
-                <p style="margin-top: 1rem; font-size: 0.875rem;">Replace this with your product demo image</p>
+            <div class="demo-container">
+                <img src="demo.gif" alt="Point Well Stated Product Demo">
             </div>
         </div>
     </section>
