@@ -138,10 +138,35 @@
             color: var(--text-primary);
         }
 
-        .demo-container {
-            display: flex;
-            justify-content: center;
+        .demo-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 3rem;
             align-items: center;
+            margin-top: 2rem;
+        }
+
+        .demo-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .demo-text h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+            line-height: 1.3;
+        }
+
+        .demo-text p {
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .demo-container {
             border-radius: 1rem;
             overflow: hidden;
             box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
@@ -151,7 +176,6 @@
             width: 100%;
             height: auto;
             display: block;
-            max-width: 100%;
         }
 
         /* Features Section */
@@ -293,6 +317,19 @@
             .cta-section h2 {
                 font-size: 2rem;
             }
+
+            .demo-wrapper {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .demo-text h3 {
+                font-size: 1.75rem;
+            }
+
+            .demo-text p {
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
@@ -323,8 +360,15 @@
     <section class="product-demo" id="demo">
         <div class="container">
             <h2>See It In Action</h2>
-            <div class="demo-container">
-                <img src="demo.gif" alt="Point Well Stated Product Demo">
+            <div class="demo-wrapper">
+                <div class="demo-text">
+                    <h3>Organize Your Thoughts Visually</h3>
+                    <p>Watch how Point Well Stated helps you structure your arguments and make clearer decisions through intuitive visual organization.</p>
+                    <p>See every feature in action—from creating structured arguments to navigating complex ideas effortlessly.</p>
+                </div>
+                <div class="demo-container">
+                    <img src="demo.gif" alt="Point Well Stated Product Demo">
+                </div>
             </div>
         </div>
     </section>
