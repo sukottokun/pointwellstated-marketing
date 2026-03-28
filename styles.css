@@ -285,6 +285,147 @@ footer a:hover {
     color: var(--text-primary);
 }
 
+/* Docs Layout */
+.docs-layout {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 8rem 2rem 4rem;
+    gap: 4rem;
+    align-items: start;
+}
+
+.docs-sidebar {
+    position: sticky;
+    top: 6rem;
+}
+
+.docs-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.docs-nav a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    padding: 0.4rem 0.75rem;
+    border-radius: 0.375rem;
+    font-size: 0.9rem;
+    transition: color 0.2s, background 0.2s;
+}
+
+.docs-nav a:hover {
+    color: var(--text-primary);
+    background: var(--bg-light);
+}
+
+.docs-content section {
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.docs-content section:last-child {
+    border-bottom: none;
+}
+
+.docs-content h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+}
+
+.docs-content h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+    margin-top: 2rem;
+    color: var(--text-primary);
+}
+
+.docs-content h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    margin-top: 1.5rem;
+    color: var(--text-primary);
+}
+
+.docs-content p {
+    color: var(--text-secondary);
+    line-height: 1.75;
+    margin-bottom: 1rem;
+}
+
+.docs-content ul {
+    color: var(--text-secondary);
+    line-height: 1.75;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.docs-content ul li {
+    margin-bottom: 0.4rem;
+}
+
+.node-type {
+    background: var(--bg-light);
+    border: 1px solid var(--border);
+    border-radius: 0.75rem;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.node-type h3 {
+    margin-top: 0;
+    margin-bottom: 0.375rem;
+}
+
+.node-type p {
+    margin-bottom: 0;
+}
+
+.docs-note {
+    background: var(--bg-light);
+    border-left: 3px solid var(--primary);
+    padding: 1rem 1.25rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+    font-size: 0.95rem;
+}
+
+.workflow-step {
+    display: flex;
+    gap: 1.25rem;
+    margin-bottom: 1.75rem;
+    align-items: flex-start;
+}
+
+.step-number {
+    flex-shrink: 0;
+    width: 2rem;
+    height: 2rem;
+    background: var(--primary);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 0.875rem;
+    margin-top: 0.2rem;
+}
+
+.step-body h3 {
+    margin-top: 0;
+}
+
+.docs-cta {
+    margin-top: 2rem;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .hero h1 {
