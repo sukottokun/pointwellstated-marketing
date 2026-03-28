@@ -12,6 +12,7 @@
     --bg-light: #f8fafc;
     --bg-white: #ffffff;
     --border: #e2e8f0;
+    --nav-height: 80px; /* adjust to your actual nav height */
 }
 
 body {
@@ -21,11 +22,13 @@ body {
     background: var(--bg-white);
 }
 
+
 /* Navigation */
 nav {
     position: fixed;
     top: 0;
     width: 100%;
+    height: var(--nav-height);
     background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border);
@@ -50,6 +53,7 @@ nav .logo {
 
 nav .nav-links {
     display: flex;
+    flex-wrap: nowrap;
     gap: 2rem;
     align-items: center;
 }
@@ -287,18 +291,18 @@ footer a:hover {
 
 /* Docs Layout */
 .docs-layout {
+    padding: calc(var(--nav-height) + 2rem) 2rem 4rem;
     display: grid;
     grid-template-columns: 220px 1fr;
     max-width: 1100px;
     margin: 0 auto;
-    padding: 8rem 2rem 4rem;
     gap: 4rem;
     align-items: start;
 }
 
 .docs-sidebar {
     position: sticky;
-    top: 6rem;
+    top: var(--nav-height);
 }
 
 .docs-nav {
